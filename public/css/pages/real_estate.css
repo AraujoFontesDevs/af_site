@@ -1,0 +1,19 @@
+#mainCoverRealEstate {
+    margin-top: -104px;
+    background-image: url("../../assets/images/real_estate.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 748px;
+}
+
+@media(max-width: 576px) {
+    #mainCoverRealEstate .background-blue-skew {
+        top: 0;
+    }
+
+    #mainCoverRealEstate {
+        min-height: 643px;
+        background-position: center;
+    }
+}

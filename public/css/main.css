@@ -1,0 +1,15 @@
+@import url('utils/reset.css');
+@import url('utils/variables.css');
+@import url('utils/classes.css');
+
+@import url('pages/home.css');
+@import url('pages/about.css');
+@import url('pages/ma.css');
+@import url('pages/cambio.css');
+@import url('pages/advise.css');
+@import url('pages/real_estate.css');
+@import url('pages/ouvidoria.css');
+@import url('pages/partners.css');
+@import url('pages/work_with_us.css');
+
+@import url('pages/footer.css');

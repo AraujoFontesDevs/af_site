@@ -1,0 +1,45 @@
+.card-padding-equipe{
+    padding: 60px;
+}
+.card-societario{
+    color: #021336;
+}
+.cards-societario:hover{
+    background-color: #021336;
+    color: white;
+}
+
+.cards-societario:hover svg{
+    fill: white;
+}
+.card-socio-header{
+    background-size:cover;
+    height: 338px;
+    background-repeat: no-repeat
+}
+
+.card-body-equipe{
+    min-height: 195px;
+    padding: 28px;
+}
+
+.cards-societario:hover > .card-title-equipe{
+    color:white!important;
+}
+
+.card-title-equipe {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+svg {
+    width: 34px;
+    fill: #021336;
+}
+
+.footer-card-equipe{
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    grid-gap: 16px;
+}

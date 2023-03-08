@@ -1,0 +1,5 @@
+.background-img-ouvidoria {
+	background-image: url('../../assets/images/bg-ouvidoria.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

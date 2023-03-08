@@ -1,0 +1,35 @@
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-grey {
+    background-color: var(--bg-grey);
+}
+
+.bg-dark-blue {
+    background-color: #021336;
+}
+
+.color-white {
+    color: white;
+}
+
+.f-weight-100 {
+    font-weight: 100;
+}
+
+.f-weight-300 {
+    font-weight: 300;
+}
+
+.f-weight-400 {
+    font-weight: 400;
+}
+
+.f-weight-700 {
+    font-weight: 700;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

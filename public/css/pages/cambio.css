@@ -1,0 +1,19 @@
+#mainCoverCambio {
+    margin-top: -104px;
+    background-image: url("../../assets/images/cambio_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 748px;
+}
+
+@media(max-width: 576px) {
+    #mainCoverCambio .background-blue-skew {
+        top: 0;
+    }
+
+    #mainCoverCambio {
+        min-height: 643px;
+        background-position: center;
+    }
+}

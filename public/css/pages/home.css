@@ -1,0 +1,878 @@
+/* Cabeçalho principal */
+
+#mainHeader {
+    margin-top: 30px;
+    padding: 12px 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1030;
+    display: none;
+}
+
+#mainHeaderAbout {
+    margin-top: 30px;
+    padding: 12px 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Menu do cabeçalho */
+#headerMenu ul {
+    list-style: none;
+}
+
+#headerMenu li {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+#headerMenu a {
+    text-decoration: none;
+    color: white;
+    transition: all .4s;
+}
+
+#headerMenu a:hover {
+    color: #c2c2c2;
+    transform: scale(1.03);
+}
+
+@media(max-width: 922px) {
+    #headerMenu {
+        display: none !important;
+    }
+
+    #headerMenuMobile {
+        display: block !important;
+        color: white;
+        font-size: 20px;
+    }
+
+    #headerMenuMobile ul {
+        top: 51px;
+        left: -123px;
+        width: 200px;
+        background-color: var(--blue);
+        padding: 0px;
+        list-style: none;
+    }
+
+    #headerMenuMobile ul li {
+        font-size: 18px;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    #headerMenuMobile ul a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 576px) {
+    #headerLogo img {
+        width: 80%;
+    }
+    #headerMenuMobile ul {
+        top: 46px;
+    }
+}
+
+/* Primeira dobra da página inicial */
+#mainCover {
+    margin-top: -104px;
+    background-image: url("../../assets/images/home_bg_cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 748px;
+}
+
+#coverTitle {
+    margin-top: 104px;
+    padding: 0px 63px;
+
+}
+#coverTitle h1 {
+    background: rgba(43, 73, 115, 0.8);
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    padding: 0 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 922px) {
+    #mainCover {
+        min-height: 500px;
+    }
+
+    #coverTitle h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* Segunda Dobra (Quem Somos) */
+#whoWeAre {
+    opacity: .9;
+    color: white;
+}
+
+#whoWeAre img {
+    filter: drop-shadow(-4px 10px 50px rgba(0, 84, 166, 0.2));
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#whoWeAre .text-section-wrapper {
+    padding-left: 6rem;
+}
+
+#whoWeAre .text-section {
+    padding-left: 6rem;
+    padding-top: 55px;
+    max-width: 700px;
+}
+
+#whoWeAre .button-wrapper {
+    padding-left: 9rem !important;
+}
+
+@media(max-width: 1280px) {
+    #whoWeAre .text-section-wrapper {
+        padding-left: 3rem;
+    }
+
+    #whoWeAre .text-section {
+        padding-left: 3rem;
+    }
+
+    #whoWeAre .button-wrapper {
+        padding-left: 6rem !important;
+    }
+}
+
+@media(max-width: 992px) {
+    #whoWeAre .text-section-wrapper {
+        padding-left: 0rem;
+    }
+
+    #whoWeAre .text-section {
+        padding-left: 0rem;
+    }
+
+    #whoWeAre .button-wrapper {
+        padding-left: 3rem !important;
+    }
+}
+
+#whoWeAre h1 {
+    font-size: 32px;
+}
+
+#whoWeAre h2 {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+#whoWeAre ul {
+    list-style: none;
+}
+
+#whoWeAre strong {
+    font-size: 38px;
+}
+
+#whoWeAre span {
+    font-size: 38px;
+    color: #396199;
+    font-weight: 700;
+}
+
+#whoWeAre p {
+    margin-top: -5px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* Quatro seções (anos no mercado, transações concluídas, etc.) */
+#whoWeAre #fourSections li {
+    max-width: 200px;
+}
+
+#whoWeAre #firstSection, #whoWeAre #thirdSection {
+    position: relative;
+}
+
+/* Separador no meio esquerda (horizontal) */
+#whoWeAre #firstSection:after {
+    content: "";
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: block;
+}
+
+/* Separador no meio cima (vertical) */
+#whoWeAre #firstSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 37px);
+    width: 1px;
+    background-color: white;
+}
+
+/* Separador no meio direita (horizontal) */
+#whoWeAre #secondSection:after {
+    content: "";
+    margin-top: 10px;
+    width: calc(100% - 15px);
+    border-bottom: 1px solid white;
+    display: block;
+}
+
+/* Separador no meio baixo (vertical) */
+#whoWeAre #thirdSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 8px);
+    width: 1px;
+    background-color: white;
+}
+
+#whoWeAre small {
+    font-size: 23px;
+}
+
+/* Botão */
+#whoWeAre a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 46px;
+    text-align: center;
+    padding: 10px 80px;
+    background: #021336;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+@media(max-width: 992px) {
+    #whoWeAre img {
+        width: 70%;
+    }
+
+    #whoWeAre .img-section {
+        justify-content: center;
+        order: 2;
+    }
+
+    #whoWeAre .text-section-wrapper {
+        padding-left: 0 !important;
+    }
+
+    #whoWeAre .text-section {
+        padding-top: 30px;
+        max-width: 100%;
+        order: 1;
+    }
+
+    #whoWeAre h2 {
+        padding: 0px 30px;
+    }
+
+    #whoWeAre #fourSections {
+        display: flex;
+        justify-content: center;
+    }
+
+    #whoWeAre ul {
+        padding-left: 0;
+    }
+
+    #whoWeAre a {
+        padding: 0 70px;
+    }
+}
+
+@media(max-width: 576px) {
+    #whoWeAre p {
+        font-size: 15px;
+    }
+
+    #whoWeAre span, #whoWeAre strong {
+        font-size: 28px;
+    }
+}
+
+
+/* Atuação */
+#acting {
+    background: linear-gradient(180deg, rgba(225, 239, 252, 0.5) 0%, rgba(4, 40, 90, 0.1) 0.01%, rgba(4, 40, 90, 0) 85.94%);
+    padding: 80px 70px;
+}
+
+#acting h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #04285A;
+}
+
+#actingList > div {
+    min-height: 272px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+}
+
+#actingList h1 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#actingList hr {
+    background-color: white;
+    height: 2px;
+    width: 60%;
+    opacity: 1;
+}
+
+#actingList p {
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#acting #mAndA {
+    background-image: url("../../assets/images/acting-ma.png");
+}
+
+#acting #financialAdvisory {
+    background-image: url("../../assets/images/acting-assessoria-financeira.png");
+}
+
+#acting #realEstate {
+    background-image: url("../../assets/images/acting-real-estate.png");
+}
+
+#acting #exchange {
+    background-image: url("../../assets/images/acting-exchange.png");
+}
+
+#acting #management {
+    background-image: url("../../assets/images/acting-management.png");
+}
+
+
+/* Princípios */
+#principles {
+    padding: 35px 70px;
+}
+
+#principles h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#principles .cards-container {
+    padding: 0 80px;
+}
+
+#principles .card-outside-title {
+    color: #FFFFFF;
+
+    opacity: 0.55;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: right;
+}
+
+#principles .card-wrapper {
+    width: 320px;
+}
+
+#principles .card-image img {
+    width: 100%;
+    max-height: 170px;
+    object-fit: cover;
+}
+
+#principles .card-content {
+    background-color: white;
+    min-height: 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#principles .card-content {
+    padding: 12px 20px;
+}
+
+#principles .card-content p {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+#principles .card-content strong {
+    font-size: 21px;
+    color: #0054A5;
+}
+
+@media(max-width: 576px) {
+    #principles .cards-container {
+        padding: 0 20px;
+    }
+
+    #principles .card-wrapper {
+        width: 210px;
+        margin-bottom: 25px;
+    }
+
+    #principles p {
+        font-size: 16px !important;
+        text-align: center;
+    }
+
+    #principles strong {
+        font-size: 16px !important;
+    }
+
+    #principles .card-outside-title {
+        font-size: 23px;
+    }
+}
+
+.single-card-container {
+    flex-basis: 33%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1060px) {
+    .cards-container {
+        justify-content: center !important;
+    }
+}
+
+
+/* Equipe */
+
+#team {
+    position: relative;
+    padding: 135px 90px;
+    background: linear-gradient(83deg, #E1EFFC 0%, rgba(4, 40, 90, 0.2) 0.01%, rgba(4, 40, 90, 0) 85.94%);
+    opacity: 0.9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#team .dialog-card {
+    display: inline-block;
+    padding: 50px 40px;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 0%);
+    max-width: 40%;
+    position: relative;
+    z-index: 1;
+}
+
+#team h1 {
+    color: #04285A;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#team p {
+    color: #042859;
+    letter-spacing: 1.02px;
+}
+
+#team #teamBtn {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 46px;
+    text-align: center;
+    padding: 10px 33px;
+    background: #021336;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    box-sizing: border-box;
+}
+
+#team img {
+    width: 60%;
+    position: absolute;
+    top: 11%;
+    left: 26%;
+    z-index: 0;
+}
+
+@media(max-width: 1920px) {
+    #team {
+        margin-bottom: 250px;
+    }
+}
+
+@media(max-width: 1600px) {
+    #team {
+        margin-bottom: 140px;
+    }
+
+    #team .dialog-card {
+        max-width: 47%;
+    }
+}
+
+@media(max-width: 1450px) {
+    #team {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 1285px) {
+    #team {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    #team img {
+        top: 17%;
+    }
+
+    #team .dialog-card {
+        max-width: 55%;
+    }
+}
+
+@media(max-width: 922px) {
+    #team img {
+        display: none;
+    }
+
+    #team {
+        background-image: url(../../assets/images/araujo-fontes-team.png);
+    }
+
+    #team .dialog-card {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 576px) {
+    #team {
+        padding: 50px 30px;
+    }
+
+    #team #teamBtn {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 360px) {
+    #team #teamBtn {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* Transações Selecionadas */
+
+#selectedTransactions {
+    padding: 35px 70px;
+}
+
+#selectedTransactions h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#selectedTransactions ul, #selectedTransactions li {
+    list-style: none;
+}
+
+#selectedTransactions ul {
+    gap: 10px;
+}
+
+#selectedTransactions .transaction {
+    position: relative;
+    flex-basis: calc(16.66% - 10px);
+    padding: 30px 30px;
+    background-color: white;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#selectedTransactions .transaction-logo, #selectedTransactions .last-transaction-logo {
+    max-width: 140px;
+}
+
+#selectedTransactions h2 {
+    color: #021336;
+    font-size: 23px;
+}
+
+#selectedTransactions p {
+    color: #021336;
+    font-size: 18px;
+}
+
+#selectedTransactions a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 46px;
+    text-align: center;
+    padding: 0 100px;
+    background: #04285A;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+#selectedTransactions .transaction-header, #selectedTransactions .text-wrapper, #selectedTransactions .transaction-footer {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectedTransactions .border-detail {
+    height: 100%;
+    top: 0;
+    position: absolute;
+    clip-path: polygon(12% 0, 0 0, 0 100%);
+    left: -1px;
+}
+
+@media(max-width: 576px) {
+    #selectedTransactions {
+        padding: 50px 30px;
+    }
+}
+
+@media(max-width: 420px) {
+    #selectedTransactions .transaction {
+        flex-basis: 100%;
+    }
+}
+
+/* Transações Selecionadas */
+
+#instagram {
+    padding: 50px 70px;
+}
+
+.insta-logo {
+    width: 130px;
+}
+
+#instagram .insta-wrapper > a {
+    text-decoration: none;
+}
+
+#instagram h1 {
+    color: #04285A;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#instagram .instafeed-wrapper {
+    gap: 10px;
+}
+
+#instagram .feed-item {
+    flex-basis: calc(20% - 10px);
+}
+
+#instagram .feed-item img {
+    width: 100%;
+}
+
+@media(max-width: 1400px) {
+    #instagram .feed-item {
+        flex-basis: calc(25% - 10px);
+    }
+}
+
+@media(max-width: 1200px) {
+    #instagram .feed-item {
+        flex-basis: calc(33% - 10px);
+    }
+}
+
+@media(max-width: 992px) {
+    #instagram .feed-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media(max-width: 576px) {
+    #instagram .feed-item {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #instagram .feed-item img {
+        width: 90%;
+    }
+
+    #instagram h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* Escritórios */
+
+#offices {
+    padding: 30px 80px;
+    position: relative;
+    background-image: url("../../assets/images/af_office.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#offices::before {
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: #E6EAEF;
+    clip-path: polygon(0 0, 100% 0, 89% 100%, 0% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#offices h1 {
+    color: #031E3C;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#offices .offices-list {
+    gap: 15px;
+    padding-left: 40px;
+}
+
+#offices .office-wrapper {
+    color: #031E3C;
+    border: 1px solid #031E3C;
+    padding: 8px 25px;
+    max-width: 30%;
+    width: 21%;
+}
+
+#offices .office-wrapper h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#offices .office-wrapper p {
+    margin-bottom: 0;
+}
+
+@media(max-width: 1400px) {
+    #offices::before {
+        width: 50%;
+    }
+
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 50%;
+    }
+}
+
+@media(max-width: 1200px) {
+    #offices::before {
+        width: 55%;
+    }
+
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 40%;
+    }
+}
+
+@media(max-width: 992px) {
+    #offices::before {
+        width: 70%;
+    }
+
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    #offices::before {
+        width: 80%;
+    }
+
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 65%;
+    }
+}
+
+@media(max-width: 620px) {
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 80%;
+    }
+}
+
+@media(max-width: 576px) {
+    #offices {
+        padding: 30px 30px;
+    }
+
+    #offices::before {
+        width: 90%;
+        background-color: #e6eaefcf;
+    }
+
+    #offices .offices-list {
+        padding-left: 0;
+    }
+
+    #offices .office-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
